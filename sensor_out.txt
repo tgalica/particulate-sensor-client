@@ -1,0 +1,99 @@
+entering loop
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 5
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 5
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 6
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 6
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 6
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 5
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
+Concentration Units (standard)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+Concentration Units (environmental)
+---------------------------------------
+PM 1.0: 0	PM2.5: 0	PM10: 0
+---------------------------------------
+Particles > 0.3um / 0.1L air: 96
+Particles > 0.5um / 0.1L air: 30
+Particles > 1.0um / 0.1L air: 5
+Particles > 2.5um / 0.1L air: 0
+Particles > 5.0um / 0.1L air: 0
+Particles > 10 um / 0.1L air: 0
+---------------------------------------
