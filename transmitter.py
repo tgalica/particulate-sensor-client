@@ -8,13 +8,14 @@ class Transmitter:
         self.conf = config
 
     def transmit(self, airborn_data):
-        print(config)
-        print(airborn_data)
+        print('calling transmit')
         firebase = pyrebase.initialize_app(config)
 
         db = firebase.database()
 
         airborn_json = jsonpickle.encode(airborn_data)
+        # print(airborn_data)
+        # print(airborn_json)
         # print(data)
         db.child("airborn-data").push(airborn_json)
         

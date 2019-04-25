@@ -18,7 +18,9 @@ except ImportError:
 # buffer = []
 i = 0
 transmitter = Transmitter()
-while i < 1:
+
+airborn_data_list = []
+while i < 5:
     i = i + 1
     # data = uart.read(32)  # read up to 32 bytes
     # data = list(data)
@@ -44,7 +46,7 @@ while i < 1:
     #     continue
 
     # frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:]))
-    airborn = AirbornData()
+    airborn_data_list.append(AirbornData())
     # pm10_standard = 1
     # pm25_standard = 1 
     # pm100_standard= 1
@@ -65,23 +67,24 @@ while i < 1:
     #     buffer = []
     #     continue
     # print(dir(airborn))
-    print("Concentration Units (standard)")
-    print("---------------------------------------")
-    print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
-          (airborn.pm10_standard, airborn.pm25_standard, airborn.pm100_standard))
-    print("Concentration Units (environmental)")
-    print("---------------------------------------")
-    print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (airborn.pm10_env, airborn.pm25_env, airborn.pm100_env))
-    print("---------------------------------------")
-    print("Particles > 0.3um / 0.1L air:", airborn.particles_03um)
-    print("Particles > 0.5um / 0.1L air:", airborn.particles_05um)
-    print("Particles > 1.0um / 0.1L air:", airborn.particles_10um)
-    print("Particles > 2.5um / 0.1L air:", airborn.particles_25um)
-    print("Particles > 5.0um / 0.1L air:", airborn.particles_50um)
-    print("Particles > 10 um / 0.1L air:", airborn.particles_100um)
-    print("---------------------------------------")
+    #####################
+    # print("Concentration Units (standard)")
+    # print("---------------------------------------")
+    # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
+    #       (airborn.pm10_standard, airborn.pm25_standard, airborn.pm100_standard))
+    # print("Concentration Units (environmental)")
+    # print("---------------------------------------")
+    # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (airborn.pm10_env, airborn.pm25_env, airborn.pm100_env))
+    # print("---------------------------------------")
+    # print("Particles > 0.3um / 0.1L air:", airborn.particles_03um)
+    # print("Particles > 0.5um / 0.1L air:", airborn.particles_05um)
+    # print("Particles > 1.0um / 0.1L air:", airborn.particles_10um)
+    # print("Particles > 2.5um / 0.1L air:", airborn.particles_25um)
+    # print("Particles > 5.0um / 0.1L air:", airborn.particles_50um)
+    # print("Particles > 10 um / 0.1L air:", airborn.particles_100um)
+    # print("---------------------------------------")
     
-    transmitter.transmit(airborn)
+transmitter.transmit(airborn_data_list)
 
     # buffer = buffer[32:]
     # print("Buffer ", buffer)
