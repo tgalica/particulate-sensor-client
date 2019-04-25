@@ -2,6 +2,7 @@
 # import busio
 # from digitalio import DigitalInOut, Direction
 from airborndata import AirbornData
+from transmitter import Transmitter
 
 try:
     import struct
@@ -16,7 +17,8 @@ except ImportError:
 
 # buffer = []
 i = 0
-while i < 5:
+transmitter = Transmitter()
+while i < 1:
     i = i + 1
     # data = uart.read(32)  # read up to 32 bytes
     # data = list(data)
@@ -79,5 +81,7 @@ while i < 5:
     print("Particles > 10 um / 0.1L air:", airborn.particles_100um)
     print("---------------------------------------")
     
+    transmitter.transmit(airborn)
+
     # buffer = buffer[32:]
     # print("Buffer ", buffer)
