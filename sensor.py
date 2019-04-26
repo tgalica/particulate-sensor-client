@@ -12,8 +12,8 @@ except ImportError:
     import ustruct as struct
 
 # Data collection variables
-sensor_name = "Elevator"
-sensor_id = 1
+sensor_name = "Construction Hallway"
+sensor_id = 2
 transmitter = Transmitter()
 airborne_data_list = []
 ########################
