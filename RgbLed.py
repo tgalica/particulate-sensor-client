@@ -6,7 +6,7 @@ class RgbLed:
         self.redPin = redPin
         self.bluePin = bluePin
         self.greenPin = greenPin
-        GPIO.setmode(GPIO.BOARD)
+        GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.redPin, GPIO.OUT)
         GPIO.setup(self.greenPin, GPIO.OUT)
         GPIO.setup(self.bluePin, GPIO.OUT)

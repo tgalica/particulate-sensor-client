@@ -3,7 +3,7 @@ from time import sleep
 import board
 
 class ledTest:
-    led = RgbLed(15,13,11)
+    led = RgbLed(17,27,22)
     print ("white")
     led.turnOn(red=True, green=True, blue=True)
     sleep(1)
