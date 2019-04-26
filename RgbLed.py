@@ -17,6 +17,6 @@ class RgbLed:
             self.redPin.value = red
         
     def turnOff(self):
-        self.bluePin.value(0)
-        self.greenPin.value(0)
-        self.redPin.value(0)
+        self.bluePin.value = False
+        self.greenPin.value = False
+        self.redPin.value = False
