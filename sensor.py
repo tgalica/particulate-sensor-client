@@ -74,7 +74,7 @@ while True:
     airborne.particles_10um = particles_10um
     airborne.particles_25um = particles_25um
     airborne.particles_50um = particles_50um
-    air.particles_100um = particles_100um
+    airborne.particles_100um = particles_100um
     
     print(airborne)
     print("Concentration Units (standard)")
