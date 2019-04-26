@@ -15,7 +15,8 @@ class Transmitter:
         db = firebase.database()
 
         payload = json.dumps([x.getObjectAsDictionary() for x in airborne_data])
+        print(payload)
         db.child("airborne-data").push(payload)
         
-        test = db.child("airborne-data").get()
-        print(test.val())
+        # test = db.child("airborne-data").get()
+        # print(test.val())
