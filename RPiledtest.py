@@ -3,9 +3,9 @@
 import time, sys
 import RPi.GPIO as GPIO
 
-redPin = 17   #Set to appropriate GPIO
-greenPin = 27 #Should be set in the 
-bluePin = 22  #GPIO.BOARD format
+redPin = 15   #Set to appropriate GPIO
+greenPin = 13 #Should be set in the 
+bluePin = 11  #GPIO.BOARD format
 
 def blink(pin):
     GPIO.setmode(GPIO.BOARD)
@@ -76,7 +76,7 @@ Use the format: color on/color off""")
 
 def main():
     while True:
-        cmd = raw_input("-->")
+        cmd = input("-->")
 
 
         if cmd == "red on":
