@@ -1,4 +1,4 @@
-class AirbornData:
+class AirborneData:
 
     def __init__(self):
         self.pm10_standard = 0
@@ -13,4 +13,3 @@ class AirbornData:
         self.particles_25um = 0
         self.particles_50um = 0
         self.particles_100um = 0
-

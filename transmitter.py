@@ -1,23 +1,23 @@
-from airborndata import AirbornData
+from airbornedata import AirborneData
 from config import config
 import pyrebase
-import jsonpickle
+# import jsonpickle
 
 class Transmitter:
     def __init__(self):
         self.conf = config
 
-    def transmit(self, airborn_data):
+    def transmit(self, airborne_data):
         print('calling transmit')
         firebase = pyrebase.initialize_app(config)
 
         db = firebase.database()
 
-        airborn_json = jsonpickle.encode(airborn_data)
-        # print(airborn_data)
-        # print(airborn_json)
+        # airborn_json = jsonpickle.encode(airborne_data)
+        print(airborne_data)
+        # print(airborne_json)
         # print(data)
-        db.child("airborn-data").push(airborn_json)
+        # db.child("airborne-data").push(airborne_json)
         
-        test = db.child("airborn-data").get()
-        print(test.val())
+        # test = db.child("airborne-data").get()
+        # print(test.val())

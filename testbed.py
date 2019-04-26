@@ -1,7 +1,7 @@
 # import board
 # import busio
 # from digitalio import DigitalInOut, Direction
-from airborndata import AirbornData
+from airbornedata import AirborneData
 from transmitter import Transmitter
 
 try:
@@ -19,7 +19,7 @@ except ImportError:
 i = 0
 transmitter = Transmitter()
 
-airborn_data_list = []
+airborne_data_list = []
 while i < 5:
     i = i + 1
     # data = uart.read(32)  # read up to 32 bytes
@@ -46,7 +46,7 @@ while i < 5:
     #     continue
 
     # frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:]))
-    airborn_data_list.append(AirbornData())
+    airborne_data_list.append(AirborneData())
     # pm10_standard = 1
     # pm25_standard = 1 
     # pm100_standard= 1
@@ -71,20 +71,20 @@ while i < 5:
     # print("Concentration Units (standard)")
     # print("---------------------------------------")
     # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
-    #       (airborn.pm10_standard, airborn.pm25_standard, airborn.pm100_standard))
+    #       (airborne.pm10_standard, airborne.pm25_standard, airborne.pm100_standard))
     # print("Concentration Units (environmental)")
     # print("---------------------------------------")
-    # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (airborn.pm10_env, airborn.pm25_env, airborn.pm100_env))
+    # print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" % (airborne.pm10_env, airborne.pm25_env, airborne.pm100_env))
     # print("---------------------------------------")
-    # print("Particles > 0.3um / 0.1L air:", airborn.particles_03um)
-    # print("Particles > 0.5um / 0.1L air:", airborn.particles_05um)
-    # print("Particles > 1.0um / 0.1L air:", airborn.particles_10um)
-    # print("Particles > 2.5um / 0.1L air:", airborn.particles_25um)
-    # print("Particles > 5.0um / 0.1L air:", airborn.particles_50um)
-    # print("Particles > 10 um / 0.1L air:", airborn.particles_100um)
+    # print("Particles > 0.3um / 0.1L air:", airborne.particles_03um)
+    # print("Particles > 0.5um / 0.1L air:", airborne.particles_05um)
+    # print("Particles > 1.0um / 0.1L air:", airborne.particles_10um)
+    # print("Particles > 2.5um / 0.1L air:", airborne.particles_25um)
+    # print("Particles > 5.0um / 0.1L air:", airborne.particles_50um)
+    # print("Particles > 10 um / 0.1L air:", airborne.particles_100um)
     # print("---------------------------------------")
     
-transmitter.transmit(airborn_data_list)
+transmitter.transmit(airborne_data_list)
 
     # buffer = buffer[32:]
     # print("Buffer ", buffer)
