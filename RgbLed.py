@@ -1,5 +1,5 @@
 import board
-import RPI.GPIO as GPIO
+import RPi.GPIO as GPIO
 
 class RgbLed:
     def __init__(self, redPin, greenPin, bluePin):
