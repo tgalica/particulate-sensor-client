@@ -59,7 +59,7 @@ while i < 90:
     #print(buffer)
     #print(buffer[4:])
     #frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:]))
-    frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:]))
+    frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:32]))
 
     pm10_standard, pm25_standard, pm100_standard, pm10_env, \
         pm25_env, pm100_env, particles_03um, particles_05um, particles_10um, \
