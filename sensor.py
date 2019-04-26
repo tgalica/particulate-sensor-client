@@ -19,6 +19,7 @@ uart = serial.Serial("/dev/serial0", baudrate=9600, timeout=3000)
 buffer = []
 print('entering loop')
 while True:
+    airborne = AirborneData()
     data = uart.read(32)  # read up to 32 bytes
     data = list(data)
     # print("read: ", data)          # this is a bytearray type
@@ -57,6 +58,25 @@ while True:
         buffer = []
         continue
 
+    # Concentration Units (standard)
+    airborne.pm10_standard = pm10_standard
+    airborne.pm25_standard = pm25_standard
+    airborne.pm100_standard = pm100_standard
+
+    # Concentration Units (environmental)
+    airborne.pm10_env = pm10_env
+    airborne.pm100_env = pm100_env
+    airborne.pm100_env = pm100_env
+
+    # Particles
+    airborne.particles_03um = particles_03um
+    airborne.particles_05um = particles_05um
+    airborne.particles_10um = particles_10um
+    airborne.particles_25um = particles_25um
+    airborne.particles_50um = particles_50um
+    air.particles_100um = particles_100um
+    
+    print(airborne)
     print("Concentration Units (standard)")
     print("---------------------------------------")
     print("PM 1.0: %d\tPM2.5: %d\tPM10: %d" %
