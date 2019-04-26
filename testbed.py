@@ -4,6 +4,8 @@
 from airbornedata import AirborneData
 from transmitter import Transmitter
 
+sensor_name = "Elevator"
+sensor_id = 1
 try:
     import struct
 except ImportError:
@@ -46,7 +48,7 @@ while i < 5:
     #     continue
 
     # frame = struct.unpack(">HHHHHHHHHHHHHH", bytes(buffer[4:]))
-    airborne_data_list.append(AirborneData())
+    airborne_data_list.append(AirborneData(sensor_id, sensor_name))
     # pm10_standard = 1
     # pm25_standard = 1 
     # pm100_standard= 1
