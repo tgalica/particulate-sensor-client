@@ -12,19 +12,10 @@ class RgbLed:
 
 
     def turnOn(self, red, green, blue):
-        if green:
-            self.greenPin.value(1)
-        else:
-            self.greenPin.value(0)
-        if blue:
-            self.bluePin.value(1)
-        else:
-            self.bluePin.value(0)
-        if red:
-            self.redPin.value(1)
-        else:
-            self.bluePin.value(0)
-    
+            self.greenPin.value(green)
+            self.bluePin.value(blue)
+            self.redPin.value(red)
+        
     def turnOff(self):
         self.bluePin.value(0)
         self.greenPin.value(0)
