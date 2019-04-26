@@ -11,7 +11,7 @@ class RgbLed:
         self.greenPin.direction = Direction.OUTPUT
 
 
-    def turnOn(self, red, green, blue):
+    def turnOn(self, red=False, green=False, blue=False):
             self.greenPin.value(green)
             self.bluePin.value(blue)
             self.redPin.value(red)
