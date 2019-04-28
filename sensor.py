@@ -1,7 +1,8 @@
 import board
 import busio
-from digitalio import DigitalInOut, Direction
+from RgbLed import RgbLed
 import serial
+from time import sleep
 
 from airbornedata import AirborneData
 from transmitter import Transmitter
@@ -18,8 +19,28 @@ transmitter = Transmitter()
 airborne_data_list = []
 ########################
 
-led = DigitalInOut(board.D13)
-led.direction = Direction.OUTPUT
+# Setup LED
+led = RgbLed(17, 27, 22)
+########################
+
+# Test LED
+led.red()
+sleep(.25)
+led.green()
+sleep(.25)
+led.blue()
+sleep(.25)
+led.magenta()
+sleep(.25)
+led.cyan()
+sleep(.25)
+led.yellow()
+sleep(.25)
+led.white()
+sleep(.25)
+led.turnOff()
+########################
+
 
 # Connect the Sensor's TX pin to the board's RX pin
 #uart = busio.UART(board.TXD, board.RXD, baudrate=9600)
@@ -111,5 +132,13 @@ while i < 90:
     buffer = buffer[32:]
     # print("Buffer ", buffer)
 
-    if airborne_data_list.__len__() == 30:
+    if (airborne.particles_03um < 200):
+        led.green()
+    elif (airborne.particles_03um < 350):
+        led.yellow()
+    else:
+        led.red()
+
+
+    if airborne_data_list.__len__() > 0 and i % 30 == 0:
         transmitter.transmit(airborne_data_list)

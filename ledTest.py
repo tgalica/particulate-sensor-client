@@ -5,16 +5,16 @@ import board
 class ledTest:
     led = RgbLed(17,27,22)
     print ("white")
-    led.turnOn(red=True, green=True, blue=True)
+    led.white()
     sleep(1)
     print ("red")
-    led.turnOn(red=True, green=False, blue=False)
+    led.red()
     sleep(1)
     print ("green")
-    led.turnOn(red=False, green=True, blue=False)
+    led.green()
     sleep(1)
     print ("blue")
-    led.turnOn(red=False, green=False, blue=True)
+    led.blue()
     sleep(1)
     led.turnOff
     

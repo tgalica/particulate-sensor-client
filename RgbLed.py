@@ -31,3 +31,24 @@ class RgbLed:
         GPIO.output(self.greenPin, GPIO.HIGH)
         GPIO.output(self.bluePin, GPIO.HIGH)
         GPIO.output(self.redPin, GPIO.HIGH)
+
+    def red(self):
+        self.turnOn(True, False, False)
+    
+    def blue(self): 
+        self.turnOn(False, False, True)
+
+    def green(self):
+        self.turnOn(False, True, False)
+    
+    def yellow(self):
+        self.turnOn(True, True, False)
+    
+    def cyan(self): 
+        self.turnOn(False, True, True)
+
+    def magenta(self):
+        self.turnOn(True, False, True)
+    
+    def white(self):
+        self.turnOn(True, True, True)
